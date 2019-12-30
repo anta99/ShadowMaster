@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  background-color: silver;
+  padding: 30px;
+  border-bottom: 2px solid #000;
+}
+
+header h1 {
+  font-size: 90px;
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  font-size: 25px;
+  border: 2px solid silver;
+  padding: 15px;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.active {
+  background-color: #298abd;
+}
+
+#examples {
+  width: 80%;
+  height: 50vh;
+  margin: 0px auto;
+  padding: 40px;
+  position: relative;
+}
+
+.example {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  width: 100%;
+}
+
+.inputs {
+  width: 50%;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+
+.inputs div {
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.inputs input[type=range] {
+  width: 50%;
+  outline: none;
+  -webkit-appearance: none;
+  background-color: silver;
+  height: 10px;
+}
+
+.inputs input[type=text] {
+  border: none;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid silver;
+}
+
+.result {
+  width: 45%;
+  margin: 0px auto;
+}
+
+.result div {
+  background-color: #298abd;
+  width: 350px;
+  height: 350px;
+  margin: 20px auto;
+}
+
+.result span {
+  font-size: 70px;
+  text-align: center;
+  padding-top: 20vh;
+  display: block;
+}
+
+.drugi {
+  display: none;
+}
+
+.code {
+  display: block;
+  margin: 0px;
+  width: 100%;
+  border: 2px solid silver;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#yourText input {
+  border: 2px solid silver;
+  padding: 10px;
+  width: 80%;
+  text-align: left;
+}
+
+#yourText span {
+  padding: 10px;
+}
+
+.colordiv {
+  width: 30%;
+  display: block;
+}
+
+::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 0px;
+  background: #298abd;
+  cursor: pointer;
+}
+
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 0px;
+  background: #298abd;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

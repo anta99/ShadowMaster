@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
+    <title>Shadow Master</title>
+
+</head>
+<body>
+    <header>
+        <h1>Shadow Master</h1>
+    </header>
+    <nav>
+        <h2>Select CSS property</h2>
+        <ul>
+            <li><a href="#boxShadow">Box-shadow</a></li>
+            <li><a href="#textShadow">Text-shadow</a></li>
+        </ul>
+    </nav>
+    <section id="examples">
+        <article class="example" id="textShadow">
+            <div class="inputs">
+                <form action="" method="GET" id="textshadow">
+                    <div>
+                        <span>X-Offset</span>
+                        <input type="range" max="200" min="-200" step="1" class="x" name="x" />
+                        <input type="text" class="xValue" name="xValue" value="0" size="1"/>
+                    </div>
+                    <div>
+                        <span >Y-Offset</span>
+                        <input type="range" max="200" min="-200" step="1" class="y" name="y" />
+                        <input type="text" class="yValue" name="yValue" value="0" size="1"/>
+                    </div>
+                    <div>
+                        <span>Blur Radius</span>
+                        <input type="range" class="blur"  min="0" max="40" />
+                        <input type="text" class="blurValue" size="1" />
+                    </div>
+                    <div class="colordiv">
+                        <span>Color</span>
+                        <input type="color" class="color" />
+                        <!--<input type="text" class="colorValue" size="6"/>-->
+                    </div>
+                    <div id="yourText">
+                        <span>Enter text here</span>
+                        <input type="text"/>
+                    </div>
+                </form>
+                <div>
+                    <span class="code"></span>
+                </div>
+            </div>
+            <div class="result">
+                <span>Your text</span>
+            </div>
+        </article>
+        <article class="example" id="boxShadow">
+            <div class="inputs">
+                <form action="" method="GET" id="bshadow">
+                    <div>
+                        <span>X-Offset</span>
+                        <input type="range" max="200" min="-200" step="1" class="x" name="x" />
+                        <input type="text" class="xValue" name="xValue" value="0" size="1"/>
+                    </div>
+                    <div>
+                        <span>Y-Offset</span>
+                        <input type="range" max="200" min="-200" step="1" class="y" name="y" />
+                        <input type="text" class="yValue" name="yValue" value="0" size="1"/>
+                    </div>
+                    <div>
+                        <span>Blur Radius</span>
+                        <input type="range" class="blur" min="0" max="80"/>
+                        <input type="text" class="blurValue" size="1"/>
+                    </div>
+                    <div class="colordiv">
+                        <span>Color</span>
+                        <input type="color" class="color" />
+                        <!--<input type="text" class="colorValue" size="6"/>-->
+                    </div>
+                    <span class="code">Code goes here</span>
+                </form>
+            </div>
+            <div class="result">
+                <div></div>
+            </div>
+        </article>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

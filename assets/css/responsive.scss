@@ -1,0 +1,33 @@
+@media screen and (max-width:1100px){}
+@media screen and (max-width:800px){
+    header h1{
+        font-size:50px;
+    }
+    #examples{
+        width: 100%;
+        padding:0px;
+    }
+    .inputs{
+        width: 100%;
+        padding: 0px;
+        
+        div{
+            width: 100%;
+            align-items: stretch;
+        }
+    }
+    .result{
+        width: 70%;
+        span{
+            font-size:45px;
+            padding: 30px 0px;
+        }
+    }
+    .result div{
+        width: 70%;
+        height:100px;
+    }
+    .code{
+        font-size:20px;
+    }
+}

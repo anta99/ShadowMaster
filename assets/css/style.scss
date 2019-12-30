@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    color:#000;
+    text-decoration: none;
+}
+header{
+    text-align: center;
+    background-color: silver;
+    padding: 30px;
+    border-bottom: 2px solid #000;
+    h1{
+        font-size: 90px;
+    }
+}
+nav{
+    text-align: center;
+    margin-top: 20px;
+    h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    ul li{
+        display: inline-block;
+        padding: 20px;
+        a{
+            font-size:25px;
+            border: 2px solid silver;
+            padding:15px;
+            transition: .8s;
+        }
+    }
+}
+.active{
+    background-color:#298abd;
+}
+#examples{
+    width: 80%;
+    height: 50vh;
+    margin:0px auto;
+    padding:40px;
+    position: relative;
+}
+.example{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+}
+.inputs{
+    width:50%;
+    text-align: center;
+    padding:15px;
+    position: relative;
+    div{
+        margin:30px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    input[type=range]{
+        width: 50%;
+        outline: none;
+        -webkit-appearance: none;
+        background-color:silver;
+        height: 10px;
+    }
+    input[type=text]{
+        border: none;
+        padding:5px;
+        text-align: center;
+        border: 2px solid silver;
+    }
+}
+.result{
+    width: 45%;
+    margin:0px auto;
+    div{
+        background-color:#298abd;
+        width: 350px;
+        height: 350px;
+        margin:20px auto;
+    }
+    span{
+        font-size:70px;
+        text-align: center;
+        padding-top: 20vh;
+        display: block;
+    }
+}
+.drugi{
+    display: none;
+}
+.code{
+    display: block;
+    margin: 0px;
+    width: 100%;
+    border: 2px solid silver;
+    padding: 10px;
+    font-size: 25px;
+}
+#yourText{
+    input{
+        border: 2px solid silver;
+        padding:10px;
+        width: 80%;
+        text-align: left;
+    }
+    span{
+        padding: 10px;
+    }
+}
+.colordiv{
+    width:30%;
+    display: block;
+}
+::-moz-range-thumb{
+    width: 25px;
+    height: 25px;
+    border-radius: 0px;
+    background: #298abd;
+    cursor: pointer;
+  }
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 0px;
+    background: #298abd;
+    cursor: pointer;
+  }
