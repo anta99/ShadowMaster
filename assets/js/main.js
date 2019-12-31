@@ -16,13 +16,11 @@ $(document).ready(function(){
     $(".y").on("input",function(){
         range(this,".yValue");
     })
-    $(".xValue").on("blur",function(){
+    $(`.xValue`).on("blur",function(){
        input(".x",this);
-       $(".xValue").val($(".xValue").val()+"px")
     })
-    $(".yValue").on("blur",function(){
+    $(`.yValue`).on("blur",function(){
         input(".y",this);
-        $(".xValue").val($(".xValue").val()+"px")
      })
      $(".blur").on("input",function(){
         range(this,".blurValue");
@@ -50,7 +48,7 @@ function resetValues(){
     $("#boxShadow .result div").removeAttr('style');
 }
 function range(toggler,field){
-    $(field).val($(toggler).val());
+    $(field).val($(toggler).val() +"px");
     if(tip=="textShadow"){
         textShadow();
     }
@@ -60,7 +58,7 @@ function range(toggler,field){
     showCode();
 }
 function input(toggler,field){
-    $(toggler).val($(field).val());
+    $(toggler).val($(field).val().replace("px",""));
     if(tip=="textShadow"){
         textShadow();
     }
